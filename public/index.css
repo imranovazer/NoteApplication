@@ -84,8 +84,8 @@
   height: fit-content;
   line-height: 0px;
   position: absolute;
-  right: 10px;
-  top: 0;
+  right: 15px;
+  top: 5px;
   font-size:70px;
   letter-spacing: -5px;
   cursor: pointer;
@@ -100,4 +100,29 @@
   color: white;
   font-size: 30px;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.subSet
+{
+  font-size: 30px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  position: absolute;
+  list-style-type: none;
+  color: black;
+  background-color: aliceblue ;
+  border-radius: 9px;
+  width: 150px;
+  height: 80px;
+  border: 1px solid black;
+  right: 20px;
+  top: 35px;
+  cursor: pointer;
+}
+
+.subSet.Active
+{
+  display: none;
 }
