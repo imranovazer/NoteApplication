@@ -12,7 +12,7 @@ export default function Notes(props)
         
         <div className="NotesMain">
             {
-                azer.map(e=><MyNote key={e.id} id= {e.id} deleteFun={props.deleteFun}/>)
+                azer.map(e=><MyNote isSaved={e.isSaved} key={e.id} id= {e.id} deleteFun={props.deleteFun} SaveFun={props.SaveFun}/>)
             }
             
             
