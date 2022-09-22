@@ -10,10 +10,12 @@
  .MAIN
 {
   color: white;
-  width: 100vw;
+  width: 100%;
   min-height: 100vh;
   background-color: #222831;
   box-sizing: border-box;
+  
+  
   
 }
 .navbar
@@ -26,9 +28,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
 }
 .navbar .addButton
 {
+
   background-color: #00ADB5;
   padding: 10px;
   border-radius: 50%;
@@ -64,6 +68,7 @@
   flex-wrap: wrap;
   justify-content: space-around;
   padding: 50px;
+  
   
   
 }
