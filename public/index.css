@@ -1,100 +1,96 @@
 
+@font-face {
+  font-family: dwFonts;
+  src: url(./fonts/BlackOpsOne-Regular.ttf);
+}
 *{
-  
   padding: 0;
   margin: 0; 
 }
-.MAIN
+ .MAIN
 {
   color: white;
-  width: 100wh;
-  height: 100vh;
-  background-color: white;
+  width: 100vw;
+  min-height: 100vh;
+  background-color: #222831;
+  box-sizing: border-box;
+  
 }
 .navbar
 {
-  padding: 10px;
-  width: 100wh;
-  height: fit-content ;
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0px 7px 14px -3px blue;
   box-sizing: border-box;
+  padding: 0 30px 0 30px; 
+  width: 100%;
+  background-color: #393E46;
+  height: 100px;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-}
-.navbar .logo
-{
-  color: blue;
-  width: 300px;
-  height: 100%;
-  display: flex;
   align-items: center;
-  justify-content: center;
-  font-weight: bold;
-  font-size: 40px;
-  margin-left: 50px;
 }
 .navbar .addButton
 {
-  color: blue;
-  border: solid black;
-  border-radius: 9px;
-  float: right;
+  background-color: #00ADB5;
+  padding: 10px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
   display: flex;
-  align-items: center;
   justify-content: center;
-  height :78px; 
-  width: 78px;
-  font-weight: bold;
-  font-size: 70px;
-  margin-right: 20px;
+  align-items: center;
+  font-size: 50px;
+  font-weight: 900;
+  transition: 0.5s;
   cursor: pointer;
+  box-shadow: rgba(255, 255, 255, 0.269) 0px 8px 24px;
+
 }
 .navbar .addButton:hover
 {
-  background-color: rgba(85, 85, 239, 0.326);
+  width: 55px;
+  height: 55px;
 }
-
+.navbar .logo
+{
+  font-size: 35px;
+  font-family:dwFonts ;
+}
 .NotesMain
 {
-  margin-top: 5px;
-  width:  100vw;
-  height: 800px;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  padding-top: 60px;
+  margin-top: 80px;
   box-sizing: border-box;
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 50px;
+  
+  
 }
 .MyNote
 {
+  box-sizing: border-box;
+  margin: 20px;
+  background-color: #00ADB5;
   align-items: center;
   display: flex;
   border-radius: 10px;
   padding: 20px;
-  width: 80%;
-  min-height: 200px;
+  width: 400px;
+  min-height: 300px;
   height: fit-content;
-  background-color: blue;
-  box-shadow: 0px 0px 8px 5px black ;
-  -webkit-box-shadow: 0px 0px 8px 5px black;
-  -moz-box-shadow: 0px 0px 8px 5px black; 
-   margin-bottom: 40px;
-   position: relative;
+  background-color: #00ADB5;
+  position: relative;
 }
-.MyNote .message
-{
-  flex: 5;
+.MyNote .message {
+   flex: 5; 
 }
-.MyNote .message .TextArea
-{
+
+.MyNote .message .TextArea {
   width: 80%;
-  
   outline: none;
   border: none;
-  resize: none; 
+  resize: none;
   background-color: transparent;
   color: white;
   font-size: 30px;
@@ -103,10 +99,48 @@
 .SavingState
 {
   flex: 1;
-  width: 200px;
+  /* width: 200px; */
+  height: 200px;
   display: flex;
-  justify-content: space-around;
+  justify-content:flex-end;
+  flex-direction: column  ;
+  align-items: center;
 }
+.SavingState .Save {
+  justify-content: center;
+  align-items: center;
+  background-color: #393E46;
+  display: flex;
+  margin: 3px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+      cursor: pointer;
+}
+.EditState {
+  flex: 1;
+    /* width: 200px; */
+    height: 200px;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+}
+.EditState .EditButt
+{
+  justify-content: center;
+    align-items: center;
+    background-color: #393E46;
+    display: flex;
+    margin: 3px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+/*
+
+
 .SavingState .Save
 {
   align-items: center;
@@ -124,14 +158,8 @@
   font-size: 60px;
   color: black;
 }
-.SavingState .Save.Delete
-{
-  background-color: red;
-}
-.SavingState .Save.Delete:hover
-{
-  background-color: rgb(232, 0, 0);
-}
+
+
 .EditState
 {
   align-items: center;
@@ -148,6 +176,6 @@
   text-align: center;
   font-size: 60px;
   color: black;
-}
+} */
 
 
